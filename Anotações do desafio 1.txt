@@ -1,1 +1,44 @@
 Inserir aqui as anotações do desafio 1: 
+# Teste 1 no Portugol
+programa {
+	funcao inicio() {
+		inteiro x, y 
+		escreva("Digite os números para executar a soma do intervalo ")
+		leia(x)
+		leia(y)
+		
+		escreva(soma_intervalo(x,y))
+	}	
+	
+		funcao inteiro soma_intervalo(inteiro x, inteiro y){
+		    inteiro total, resultado_parcial
+		    total = y/2 
+		    resultado_parcial = y+x 
+		    
+		    inteiro resultado = resultado_parcial * total 
+		    retorne resultado
+		}
+		
+	}
+  
+  # Teste 2 no portugol
+  programa {
+	funcao inicio() {
+		real a, b, nota_a, nota_b
+		escreva("Digite as notas p1 e p2 do aluno A ")
+		leia(a)
+		leia(b)
+		escreva("Digite as notas p1 e p2 do aluno B ")
+		leia(nota_a)
+		leia(nota_b)
+		
+		
+		escreva("Média do aluno A ", media_aluno(a, b))
+		escreva("\nMédia do aluno B ", media_aluno(nota_a, nota_b))
+	}
+	
+	funcao real media_aluno(real nota_a, real nota_b){
+	    retorne (nota_a + nota_b)/2
+	    
+	}
+}
